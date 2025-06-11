@@ -226,9 +226,10 @@ body{
 
     &__link{
         display: block;
-        padding: 1em;
+        padding: 0.8em;
         text-decoration: none;
         color: rgba(0, 0, 0, 0.834);
+        font-size: 3.5vw;
 
         &:hover{
             color: $link-hover-font;
