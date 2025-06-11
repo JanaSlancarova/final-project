@@ -13,6 +13,12 @@ $button-hover-color:#5F5D6B;
 $ham-menu-width: 200px;
 
 $font-main: "Montserrat", sans-serif;
+$font-size-main: 16px;
+$font-size-buttons: 18px;
+$font-size-mobile: 3.8vw;
+$font-size-title: 24px;
+$font-size-title-2: 20px;
+
 
   
   
@@ -57,11 +63,15 @@ body{
     height: 100vh;
     width: 100%;
     max-width: $ham-menu-width;
-    font-size: 18px;
+    font-size: $font-size-mobile;
     position: fixed;
     top: 0;
     right: -100%;
     transition: .3s ease;
+
+    @media screen and (min-width:473px) {
+        font-size: $font-size-buttons;
+    }
 }
 .menu.active {
     right: 0;
@@ -229,11 +239,17 @@ body{
         padding: 0.8em;
         text-decoration: none;
         color: rgba(0, 0, 0, 0.834);
-        font-size: 3.5vw;
+        font-size: 3.8vw;
 
         &:hover{
             color: $link-hover-font;
         }
+    }
+}
+
+@media screen and (min-width:420px) {
+    .banner__link{
+        font-size: 16px;
     }
 }
 

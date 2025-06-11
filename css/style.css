@@ -31,11 +31,16 @@ body {
   height: 100vh;
   width: 100%;
   max-width: 200px;
-  font-size: 18px;
+  font-size: 3.8vw;
   position: fixed;
   top: 0;
   right: -100%;
   transition: 0.3s ease;
+}
+@media screen and (min-width: 473px) {
+  .menu {
+    font-size: 18px;
+  }
 }
 
 .menu.active {
@@ -178,12 +183,17 @@ body {
   padding: 0.8em;
   text-decoration: none;
   color: rgba(0, 0, 0, 0.834);
-  font-size: 3.5vw;
+  font-size: 3.8vw;
 }
 .banner__link:hover {
   color: white;
 }
 
+@media screen and (min-width: 420px) {
+  .banner__link {
+    font-size: 16px;
+  }
+}
 @media screen and (min-width: 700px) {
   .banner {
     display: flex;
