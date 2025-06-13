@@ -47,8 +47,9 @@ body{
     &__text{
         grid-column: 1/3;
         padding: 0.5em;
+        }
 
-    &_price,{
+    &_price{
         padding: 0.5em;
     }
 
@@ -56,8 +57,7 @@ body{
     }
 
 
-    }
-
+    
 
 
 
