@@ -7,10 +7,14 @@ $background_ham_menu: #8e9489d4;
 
 //links
 $link-hover-font:rgba(255, 255, 255, 0.836);
-$link-hover-background:#5F5D6B;
+$link-hover-font-menu:#34333b;
+$link-hover-background:#5f5d6bce;
 
-//banner
-$background-banner: #8E9489;
 $button-color: #787587;
-$button-hover-color:#5F5D6B;
+$button-menu-hover-color:#e3dfe6;
+$button-ham-menu-hover-color:#5F5D6B;
+$button-banner-hover-color:#5F5D6B;
+
+
+$background-banner: #8E9489;
 $banner-text-color:rgba(255, 255, 255, 0.836);

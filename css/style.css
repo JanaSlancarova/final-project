@@ -3,11 +3,16 @@
   justify-content: space-between;
   align-items: center;
   background-color: #F6F2F2;
-  margin: 1.5em 2em;
+  padding: 1.5em 2em;
+  margin: 0;
 }
 
+.logo {
+  width: 200px;
+}
 .logo__image {
-  width: 250px;
+  width: 100%;
+  height: auto;
 }
 
 .menu {
@@ -119,7 +124,7 @@
   }
   .header {
     display: block;
-    margin: 2em 3em;
+    padding: 2em 3em;
   }
   .header-desktop {
     display: flex;
@@ -133,6 +138,10 @@
   .menu__link {
     padding: 1em 1.5em;
     width: max-content;
+  }
+  .menu__link:hover {
+    background-color: #e3dfe6;
+    color: #34333b;
   }
 }
 .banner {
@@ -171,7 +180,7 @@
 
 @media screen and (min-width: 420px) {
   .banner__link {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 @media screen and (min-width: 700px) {
@@ -184,14 +193,16 @@
 }
 @media screen and (min-width: 900px) {
   .banner {
-    padding: 3em 3em;
+    padding: 2em 3em;
+    padding-top: 3em;
+    padding-bottom: 3em;
   }
 }
 .footer {
   background-color: #8E9489;
   padding: 1em;
   text-align: center;
-  color: white;
+  color: rgba(255, 255, 255, 0.836);
 }
 
 html {

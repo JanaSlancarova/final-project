@@ -1,10 +1,11 @@
 @use "colors";
 @use "fonts";
+@use "spacings";
 
 //banner
 .banner{
     background-color: colors.$background-banner;
-    padding: 1.5em 2em;
+    padding: spacings.$spacing-mobile;
     //display: flex;
     justify-content: space-between;    
     align-items: center;
@@ -15,7 +16,7 @@
         color: white;
         margin: 0;
         margin-bottom: 1em;
-       // display: none;
+       //display: none;
 
     }
 
@@ -31,7 +32,7 @@
         &:hover,
         &:active,
         &:focus{
-            background-color: colors.$button-hover-color;
+            background-color: colors.$button-banner-hover-color;
         }
     }
 
@@ -50,7 +51,7 @@
 
 @media screen and (min-width:420px) {
     .banner__link{
-        font-size: 16px;
+        font-size: fonts.$font-size-buttons;
     }
 }
 
@@ -68,7 +69,9 @@
 @media screen and (min-width:900px) {
 
     .banner{
-        padding: 3em 3em;
+        padding: spacings.$spacing-desktop;
+        padding-top: 3em;
+        padding-bottom: 3em;
     }
 }
 
