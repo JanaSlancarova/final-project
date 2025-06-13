@@ -1,0 +1,75 @@
+@use "colors";
+@use "fonts";
+
+//banner
+.banner{
+    background-color: colors.$background-banner;
+    padding: 1.5em 2em;
+    //display: flex;
+    justify-content: space-between;    
+    align-items: center;
+
+
+     &__perex{
+        font-size: 20px;
+        color: white;
+        margin: 0;
+        margin-bottom: 1em;
+       // display: none;
+
+    }
+
+    &__buttons{
+        display: flex;
+        gap: 1.5em;
+    }
+
+    &__button{
+        background-color: colors.$button-color;
+        width: fit-content;
+
+        &:hover,
+        &:active,
+        &:focus{
+            background-color: colors.$button-hover-color;
+        }
+    }
+
+    &__link{
+        display: block;
+        padding: 0.8em;
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.834);
+        font-size: 3.8vw;
+
+        &:hover{
+            color: colors.$link-hover-font;
+        }
+    }
+}
+
+@media screen and (min-width:420px) {
+    .banner__link{
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width:700px) {
+    
+    .banner{
+        display: flex;
+
+        &__perex{
+            margin: 0;
+        }
+    }
+}
+
+@media screen and (min-width:900px) {
+
+    .banner{
+        padding: 3em 3em;
+    }
+}
+
+//konec banner

@@ -1,0 +1,9 @@
+@use "colors";
+@use "fonts";
+
+.footer{
+    background-color: colors.$background-banner;
+    padding: 1em;
+    text-align: center;
+    color: white;
+}
