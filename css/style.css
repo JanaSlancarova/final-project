@@ -129,9 +129,7 @@ body {
   .menu {
     right: 0;
     background-color: transparent;
-    height: -moz-fit-content;
     height: fit-content;
-    max-width: -moz-fit-content;
     max-width: fit-content;
     position: relative;
   }
@@ -150,7 +148,6 @@ body {
   }
   .menu__link {
     padding: 1em 1.5em;
-    width: -moz-max-content;
     width: max-content;
   }
 }
@@ -172,7 +169,6 @@ body {
 }
 .banner__button {
   background-color: #787587;
-  width: -moz-fit-content;
   width: fit-content;
 }
 .banner__button:hover, .banner__button:active, .banner__button:focus {
