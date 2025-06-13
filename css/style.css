@@ -221,19 +221,31 @@ body {
   font-style: normal;
 }
 
-.glide__slide img {
-  width: 100%;
+.news {
+  text-align: center;
+  color: #34333b;
 }
 
-.glide__slide {
-  padding: 20px;
+.card {
+  width: 300px;
+  text-align: center;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: lightgray;
+  margin: 0 auto;
 }
-
-.siema img {
+.card__label {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding: 0.5em;
+}
+.card__image {
   width: 100%;
 }
-
-.siema {
-  width: 500px;
+.card__text {
+  grid-column: 1/3;
+  padding: 0.5em;
+}
+.card__text_price {
+  padding: 0.5em;
 }/*# sourceMappingURL=style.css.map */
