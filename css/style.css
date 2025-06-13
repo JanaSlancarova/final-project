@@ -219,4 +219,21 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+.glide__slide img {
+  width: 100%;
+}
+
+.glide__slide {
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.siema img {
+  width: 100%;
+}
+
+.siema {
+  width: 500px;
 }/*# sourceMappingURL=style.css.map */
