@@ -37,6 +37,7 @@ $ham-menu-width: 200px;
     top: 0;
     right: -100%;
     transition: .3s ease;
+    overflow-y: scroll;
 
     @media screen and (min-width:473px) {
         font-size: fonts.$font-size-buttons;
@@ -142,6 +143,7 @@ $ham-menu-width: 200px;
         height: fit-content;
         max-width: fit-content;
         position: relative;
+        overflow-y:hidden
     }
 
     .header{
