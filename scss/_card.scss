@@ -1,25 +1,41 @@
 @use "colors";
 @use "fonts";
+@use "spacings";
 
+.products-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1em;
+    
 
+}
 
 .card{
-    width: 300px;
+    width: 150px;
     text-align: center;
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color:lightgray ;
-    margin: 2em auto;
+    margin: 1em auto;
+    font-size: 12px;
+
+    &__head{
+        height: 200px;
+        overflow: hidden;
+    }
+     
 
     &__label{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 10px;
+       // gap: 10px;
         padding: 0.5em;
         align-items: center;
     }
 
     &__image{
         width: 100%;
+        object-fit: cover;
+        object-position: center center ;
     }
 
     &__text{
@@ -39,7 +55,7 @@
     }
 }
     .button-buy{
-        padding: 0.5em 2em;
+        padding: 0.5em 1em;
         background-color: colors.$button-color;
         border-radius: 5px;
         text-decoration: none;

@@ -2,7 +2,7 @@
 @use "fonts";
 @use "spacings";
 
-$ham-menu-width: 200px;
+$ham-menu-width: 250px;
 
 
 .header{
@@ -47,6 +47,9 @@ $ham-menu-width: 200px;
     right: -100%;
     transition: .3s ease;
     overflow-y: scroll;
+    border-left: 2px solid rgba(0, 0, 0, 0.1);
+
+
 
     @media screen and (min-width:473px) {
         font-size: fonts.$font-size-buttons;
@@ -94,10 +97,12 @@ $ham-menu-width: 200px;
     width: 25px;
     margin-left: auto;
     position: relative;
+    z-index: 1000;
 }
 
 .ham-menu.active{
      background-color:  transparent;
+    overscroll-behavior: none
     }
 
 // .ham-menu.active .menu__link{
