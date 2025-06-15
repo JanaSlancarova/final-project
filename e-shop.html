@@ -1,0 +1,17 @@
+---
+layout: layouts/template-main.njk
+---
+
+
+{% for product in collections.products %}
+
+<div class="card">
+  <img class="card__image" src="/images/{{product.data.image}}.jpg" alt="{{product.data.alt}}" />
+  <div class="card__label">
+    <div class="card__text">{{product.data.desc}}</div>
+    <div class="card__price">{{product.data.price}}</div>
+    <div class="card__button"><a class="button-buy" href="product.url">KOUPIT</a></div>
+  </div>
+</div>
+
+{% endfor %}
