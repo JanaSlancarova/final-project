@@ -12,7 +12,7 @@
 }
 
 .logo {
-  width: 150px;
+  width: 30vw;
   margin-right: 20px;
 }
 .logo__image {
@@ -26,7 +26,7 @@
 }
 
 .menu {
-  background-color: rgba(159, 165, 153, 0.8745098039);
+  background-color: rgba(159, 165, 153, 0.9568627451);
   height: 100vh;
   width: 100%;
   max-width: 250px;
@@ -40,7 +40,7 @@
 }
 @media screen and (min-width: 473px) {
   .menu {
-    font-size: 18px;
+    font-size: 3.8vw;
   }
 }
 
@@ -167,7 +167,7 @@
   align-items: center;
 }
 .banner__perex {
-  font-size: 20px;
+  font-size: 6vw;
   color: white;
   margin: 0;
   margin-bottom: 1em;
@@ -196,7 +196,7 @@
 
 @media screen and (min-width: 420px) {
   .banner__link {
-    font-size: 18px;
+    font-size: 3.8vw;
   }
 }
 @media screen and (min-width: 700px) {
@@ -218,19 +218,50 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 1em;
+  max-width: 800px;
+}
+@media screen and (min-width: 600px) {
+  .products-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 800px) {
+  .products-list {
+    column-gap: 2em;
+  }
+}
+
+.box {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .card {
-  width: 150px;
+  width: 40vw;
   text-align: center;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: lightgray;
   margin: 1em auto;
-  font-size: 12px;
+  font-size: 3.5vw;
+}
+@media screen and (min-width: 400px) {
+  .card {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .card {
+    width: 28vw;
+  }
 }
 .card__head {
-  height: 200px;
+  height: 53vw;
   overflow: hidden;
+}
+@media screen and (min-width: 600px) {
+  .card__head {
+    height: 37vw;
+  }
 }
 .card__label {
   display: grid;

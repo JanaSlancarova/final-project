@@ -6,21 +6,52 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 1em;
+    max-width: 800px;
+
+    @media screen and (min-width: 600px) {
+        grid-template-columns: repeat(3, 1fr);
+        
+        
+    }
     
+        @media screen and (min-width: 800px) {
+        column-gap: 2em;
+               
+    }
 
 }
 
+.box{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 .card{
-    width: 150px;
+    width: 40vw;
     text-align: center;
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color:lightgray ;
     margin: 1em auto;
-    font-size: 12px;
+    font-size: fonts.$font-size-card-mobile;
+
+    @media screen and (min-width: 400px) {
+        font-size: fonts.$font-size-card-desktop;
+        
+    }
+
+    @media screen and (min-width: 600px) {
+        width: 28vw;
+        
+    }
 
     &__head{
-        height: 200px;
+        height: 53vw;
         overflow: hidden;
+
+        @media screen and (min-width: 600px) {
+            height: 37vw;
+            
+        }
     }
      
 
