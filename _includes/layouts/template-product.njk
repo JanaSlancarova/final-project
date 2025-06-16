@@ -3,19 +3,31 @@ layout: layouts/template-main.njk
 ---
 
 <div class="product">
-    <h2 class="product__name">{{ name }}</h2>
+  <h2 class="product__name">{{ name }}</h2>
 
   <div class="product__image">
     <img class="product__img" src="/images/{{ image }}.jpg" alt="{{ alt }}" />
   </div>
+
+  <div class="product__info">
+    <h2 class="product__name--desktop">{{ name }}</h2>
+    <div class="product__desc">
+
+      <p>{{desc}}</p>
+      <p>{{desc2}}</p>
+      <p>{{desc3}}</p>
+      <p>{{desc4}}</p>
+      
+    </div>
+
   
-    <div class="product__info">
 
-    {{ content | safe }}
-
-    <p class="product__price">{{ price }}</p>
-
-<!-- <div class="product__button"><a class="button-buy--big" href="#">KOUPIT</a></div> -->
-    {% include 'partials/window.njk' %}  
-</div>
+    <!-- <div class="product__button"><a class="button-buy--big" href="#">KOUPIT</a></div> -->
+    
+  </div>
+  <div class="product__buy">
+  <p class="product__price">{{ price }}</p>
+  <p class="product__state">{{state}}</p>
+  {% include 'partials/window.njk' %}
+  </div>
 </div>

@@ -9,6 +9,7 @@
     font-size: fonts.$font-size-mobile;
     display: block;
     width: fit-content;
+    height: fit-content;
     text-decoration: none;
 
 
@@ -16,6 +17,12 @@
     &:active,
     &:focus{
         background-color: colors.$button-banner-hover-color;
+    }
+
+    @media screen and (min-width: 500px) {
+       // margin-left: 1em;
+        font-size: fonts.$font-size-desktop;
+       // align-self: end;
     }
 }
 
