@@ -4,7 +4,9 @@
 @use "banner";
 @use "card";
 @use "product";
+@use "modal";
 @use "footer";
+
 
 html { box-sizing: border-box; }
 *, ::before, ::after { box-sizing: inherit; }
@@ -31,7 +33,7 @@ body{
 
 
 
-    
+ 
 
 
 
