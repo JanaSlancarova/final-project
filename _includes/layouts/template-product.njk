@@ -1,0 +1,20 @@
+---
+layout: layouts/template-main.njk
+---
+
+<div class="product">
+    <h2 class="product__name">{{ name }}</h2>
+
+  <div class="product__image">
+    <img class="product__img" src="/images/{{ image }}.jpg" alt="{{ alt }}" />
+  </div>
+  
+    <div class="product__info">
+
+    {{ content | safe }}
+
+    <p class="product__price">{{ price }}</p>
+
+    <div class="product__button"><a class="button-buy--big" href="#">KOUPIT</a></div>
+  </div>
+</div>

@@ -3,7 +3,7 @@ layout: layouts/template-main.njk
 ---
 
 <div class="products-list">
-{% for product in collections.products | reverse %}
+{% for product in collections.hrnky | reverse %}
 
 <div class="card">
     <div class="card__head">
@@ -14,10 +14,10 @@ layout: layouts/template-main.njk
   />
   </div>
   <div class="card__label">
-    <div class="card__text">{{product.data.desc}}</div>
+    <div class="card__text">{{product.data.name}}</div>
     <div class="card__price">{{product.data.price}}</div>
     <div class="card__button">
-      <a class="button-buy" href="/hrnky/product.url">KOUPIT</a>
+      <a class="button-buy" href="{{product.url}}">KOUPIT</a>
     </div>
   </div>
 </div>
