@@ -35,9 +35,9 @@
   width: 100%;
   height: auto;
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 666px) {
   .logo {
-    width: 250px;
+    width: 200px;
   }
 }
 @media screen and (max-height: 500px) {
@@ -240,11 +240,17 @@
     padding-bottom: 3em;
   }
 }
+.box {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 .products-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 1em;
   max-width: 800px;
+  margin: 0 auto;
 }
 @media screen and (min-width: 600px) {
   .products-list {
@@ -257,11 +263,6 @@
   }
 }
 
-.box {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
 .card {
   width: 40vw;
   text-align: center;
@@ -269,6 +270,7 @@
   background-color: lightgray;
   margin: 1em auto;
   font-size: 3.5vw;
+  max-width: 225px;
 }
 @media screen and (min-width: 400px) {
   .card {
@@ -283,6 +285,7 @@
 .card__head {
   height: 53vw;
   overflow: hidden;
+  max-height: 300px;
 }
 @media screen and (min-width: 600px) {
   .card__head {

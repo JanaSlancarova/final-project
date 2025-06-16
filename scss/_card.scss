@@ -2,11 +2,19 @@
 @use "fonts";
 @use "spacings";
 
+
+.box{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
 .products-list{
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 1em;
     max-width: 800px;
+    margin: 0 auto;
 
     @media screen and (min-width: 600px) {
         grid-template-columns: repeat(3, 1fr);
@@ -21,10 +29,6 @@
 
 }
 
-.box{
-    max-width: 800px;
-    margin: 0 auto;
-}
 
 .card{
     width: 40vw;
@@ -33,6 +37,7 @@
     background-color:lightgray ;
     margin: 1em auto;
     font-size: fonts.$font-size-card-mobile;
+    max-width: 225px;
 
     @media screen and (min-width: 400px) {
         font-size: fonts.$font-size-card-desktop;
@@ -47,6 +52,7 @@
     &__head{
         height: 53vw;
         overflow: hidden;
+        max-height: 300px;
 
         @media screen and (min-width: 600px) {
             height: 37vw;
