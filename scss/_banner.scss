@@ -12,11 +12,14 @@
 
 
      &__perex{
-        font-size: fonts.$font-size-title;
+        font-size: fonts.$font-size-title-mobile;
         color: white;
         margin: 0;
         margin-bottom: 1em;
        //display: none;
+        @media screen and (min-width: 333px) {
+            font-size: fonts.$font-size-title-desktop;
+        }
 
     }
 
@@ -41,7 +44,7 @@
         padding: 0.8em;
         text-decoration: none;
         color: rgba(0, 0, 0, 0.834);
-        font-size: fonts.$font-size-buttons;
+        font-size: fonts.$font-size-mobile;
 
         &:hover{
             color: colors.$link-hover-font;
@@ -49,9 +52,9 @@
     }
 }
 
-@media screen and (min-width:420px) {
+@media screen and (min-width:400px) {
     .banner__link{
-        font-size: fonts.$font-size-buttons;
+        font-size: fonts.$font-size-desktop;
     }
 }
 
