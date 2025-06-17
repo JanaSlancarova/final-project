@@ -9,24 +9,22 @@
     padding: 2em;
     max-width: 800px;
     margin: 0 auto;
-    
+
+    @media screen and (min-width: 333px) {
+        font-size: fonts.$font-size-title-desktop;
+    }
     
 
     &__image{
         width: 100%;
         max-height: 500px;
-        overflow: hidden;
-        
-
+        overflow: hidden;  
     }
 
     &__img{
         width: 100%;
         object-fit: cover;
-        object-position: 25% 25%; 
-        
-        
-        
+        object-position: 25% 25%;             
     }
 
     &__name{
@@ -43,14 +41,11 @@
             font-size: fonts.$font-size-title-mobile;
             @media screen and (min-width: 333px) {
                 font-size: fonts.$font-size-title-desktop;
-    }
+            }
 
         }
 
-        @media screen and (min-width: 333px) {
-        font-size: fonts.$font-size-title-desktop;
-    }
-    }
+     }
     
     &__info{
         font-size: fonts.$font-size-mobile;
@@ -65,16 +60,6 @@
         font-size: fonts.$font-size-mobile;
     }
 
-    /*&__desc{
-        margin: 0;
-        font-size: fonts.$font-size-mobile;
-    }*/
-
-    /*&__button{
-        background-color: colors.$button-color;
-        width: fit-content;
-      
-    }*/
 
 
     @media screen and (min-width: 500px) {
@@ -94,10 +79,8 @@
             display: none;
 
             &--desktop{
-                display: block;
-                
-            font-size: fonts.$font-size-title-desktop;
-
+                display: block;   
+                font-size: fonts.$font-size-title-desktop;
             }
         }
 

@@ -2,25 +2,86 @@
 layout: layouts/template-main.njk
 ---
 
-<div class="products-list">
-{% for product in collections.eshop | reverse %}
+<div class="box">
+  <h3>Kategorie:</h3>
+  <nav class="menu-categories">
+    <ul>
+      <li class="menu-categories__item">
+        <a class="menu-categories__link" href="/eshop/hrnky/">Hrnky</a>
+      </li>
+      <li class="menu-categories__item">
+        <a class="menu-categories__link" href="/eshop/kalisky/">Kalíšky</a>
+      </li>
+      <li class="menu-categories__item">
+        <a class="menu-categories__link" href="/eshop/misky/">Misky</a>
+      </li>
+      <li class="menu-categories__item">
+        <a class="menu-categories__link" href="/eshop/talire/">Talíře</a>
+      </li>
+    </ul>
+  </nav>
 
-<div class="card">
-    <div class="card__head">
-  <img
-    class="card__image"
-    src="/images/{{product.data.image}}.jpg"
-    alt="{{product.data.alt}}"
-  />
-  </div>
-  <div class="card__label">
-    <div class="card__text">{{product.data.name}}</div>
-    <div class="card__price">{{product.data.price}}</div>
-    <div class="card__button">
-      <a class="button-buy" href="{{product.url}}">KOUPIT</a>
-    </div>
-  </div>
+  <h2 class="product__name--visible">Kategorie</h2>
 </div>
 
-{% endfor %}
+<div class="products-list">
+  <div class="card">
+    <a class="card__link" href="/eshop/hrnky/">
+      <div class="card__head">
+        <img
+          class="card__image"
+          src="/images/hrnky.jpg"
+          alt="Kategorie hrnky"
+        />
+      </div>
+      <div class="card__label">
+        <div class="card__text">HRNKY</div>
+      </div>
+    </a>
+  </div>
+
+  <div class="card">
+    <a class="card__link" href="/eshop/kalisky/">
+      <div class="card__head">
+        <img
+          class="card__image"
+          src="/images/hrnky.jpg"
+          alt="Kategorie hrnky"
+        />
+      </div>
+      <div class="card__label">
+        <div class="card__text">KALÍŠKY</div>
+      </div>
+    </a>
+  </div>
+
+  <div class="card">
+    <a class="card__link" href="/eshop/misky/">
+      <div class="card__head">
+        <img
+          class="card__image"
+          src="/images/hrnky.jpg"
+          alt="Kategorie hrnky"
+        />
+      </div>
+      <div class="card__label">
+        <div class="card__text">MISKY</div>
+      </div>
+    </a>
+  </div>
+
+  <div class="card">
+    <a class="card__link" href="/eshop/talire/">
+      <div class="card__head">
+        <img
+          class="card__image"
+          src="/images/hrnky.jpg"
+          alt="Kategorie hrnky"
+        />
+      </div>
+      <div class="card__label">
+        <div class="card__text">TALÍŘE</div>
+      </div>
+    </a>
+  </div>
 </div>

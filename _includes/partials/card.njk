@@ -1,4 +1,5 @@
 <div class="card">
+    <a class="card__link" href="{{product.url}}">
     <div class="card__head">
   <img
     class="card__image"
@@ -6,11 +7,13 @@
     alt="{{product.data.alt}}"
   />
   </div>
+  </a>
   <div class="card__label">
     <div class="card__text">{{product.data.name}}</div>
     <div class="card__price">{{product.data.price}}</div>
     <div class="card__button">
-      <a class="button-buy" href="{{product.url}}">KOUPIT</a>
+      {% include 'partials/window-small.njk' %}
     </div>
   </div>
+  
 </div>
