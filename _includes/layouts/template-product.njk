@@ -31,20 +31,18 @@ layout: layouts/template-main.njk
   <h2 class="secondary-title">Mohlo by vás zajímat</h2>
 
   <div class="other-products__list">
-    {% for product in collections.eshop | reverse %}
-    {% if loop.index0 < 3 %}
+    {% for product in collections.eshop | reverse %} {% if loop.index0 < 3 %}
     <div class="card-small">
-        <a class="card-small__link" href="{{product.url}}">
-      <img
-        class="card-small__image"
-        src="/images/{{ product.data.image }}.jpg"
-        alt="{{ product.data.alt }}"
-      />
-      <div class="card-small__text">{{ product.data.name }}</div>
+      <a class="card-small__link" href="{{ product.url }}">
+        
+        <img
+          class="card-small__image"
+          src="/images/{{ product.data.image }}.jpg"
+          alt="{{ product.data.alt }}"
+        />
+        <div class="card-small__text">{{ product.data.name }}</div>
       </a>
-      
     </div>
-    {% endif%} 
-    {% endfor%}
+    {% endif%} {% endfor%}
   </div>
 </div>
