@@ -658,6 +658,10 @@ body {
   color: black;
   font-weight: 600;
 }
+.menu-categories__item--active {
+  color: black;
+  font-weight: 600;
+}
 .menu-categories__link {
   text-decoration: none;
   padding: 0.5em;
