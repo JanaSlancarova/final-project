@@ -243,8 +243,8 @@
 .box {
   max-width: 800px;
   margin: 0 auto;
+  padding: 1em 2em;
 }
-
 .products-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -358,6 +358,15 @@
 .product__name--desktop {
   display: none;
 }
+.product__name--visible {
+  display: block;
+  font-size: 6vw;
+}
+@media screen and (min-width: 333px) {
+  .product__name--visible {
+    font-size: 20px;
+  }
+}
 @media screen and (min-width: 333px) {
   .product__name {
     font-size: 20px;
@@ -366,6 +375,9 @@
 .product__info {
   font-size: 3.8vw;
   margin-bottom: 3em;
+}
+.product__desc {
+  font-size: 3.8vw;
 }
 .product__buy {
   font-size: 3.8vw;

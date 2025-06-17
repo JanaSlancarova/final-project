@@ -38,6 +38,15 @@
             display: none;
         }
 
+         &--visible{
+            display: block;
+            font-size: fonts.$font-size-title-mobile;
+            @media screen and (min-width: 333px) {
+                font-size: fonts.$font-size-title-desktop;
+    }
+
+        }
+
         @media screen and (min-width: 333px) {
         font-size: fonts.$font-size-title-desktop;
     }
@@ -46,6 +55,10 @@
     &__info{
         font-size: fonts.$font-size-mobile;
         margin-bottom: 3em;
+    }
+
+    &__desc{
+        font-size: fonts.$font-size-mobile;
     }
 
     &__buy{

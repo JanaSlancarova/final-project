@@ -8,22 +8,7 @@ text: Ručně točené hrnky z kameniny, které jsou vhodné pro každodenní po
 <div class="products-list">
 {% for product in collections.misky | reverse %}
 
-<div class="card">
-    <div class="card__head">
-  <img
-    class="card__image"
-    src="/images/{{product.data.image}}.jpg"
-    alt="{{product.data.alt}}"
-  />
-  </div>
-  <div class="card__label">
-    <div class="card__text">{{product.data.name}}</div>
-    <div class="card__price">{{product.data.price}}</div>
-    <div class="card__button">
-      <a class="button-buy" href="{{product.url}}">KOUPIT</a>
-    </div>
-  </div>
-</div>
+{% include 'partials/card.njk' %}
 
 {% endfor %}
 </div>

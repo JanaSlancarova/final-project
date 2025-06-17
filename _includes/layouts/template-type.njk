@@ -1,9 +1,10 @@
 ---
 layout: layouts/template-main.njk
 ---
-<h2>{{title}}</h2>
+<div class="box">
+<h2 class="product__name--visible">{{title}}</h2>
 
-<p>{{text}}</p>
-
+<p class="product__desc">{{text}}</p>
+</div>
 {{ content | safe }}
 
