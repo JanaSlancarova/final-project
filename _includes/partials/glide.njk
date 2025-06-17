@@ -1,0 +1,102 @@
+<div class="glide">
+  <div class="glide__track" data-glide-el="track">
+    <ul class="glide__slides">
+      <li class="glide__slide">
+        <div class="glide__image">
+          <div class="card">
+            <img class="card__image" src="/images/{{image1}}.jpg" alt="" />
+            <div class="card__label">
+              <div class="card__text">{{name1}}</div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="glide__slide">
+        <div class="glide__image">
+          <div class="card">
+            <img class="card__image" src="/images/{{image2}}.jpg" alt="" />
+            <div class="card__label">
+              <div class="card__text">{{name2}}</div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="glide__slide">
+        <div class="glide__image">
+          <div class="card">
+            <img class="card__image" src="/images/{{image3}}.jpg" alt="" />
+            <div class="card__label">
+              <div class="card__text">{{name3}}</div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="glide__slide">
+        <div class="glide__image">
+          <div class="card">
+            <img class="card__image" src="/images/{{image4}}.jpg" alt="" />
+            <div class="card__label">
+              <div class="card__text">{{name4}}</div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="glide__slide">
+        <div class="glide__image">
+          <div class="card">
+            <img class="card__image" src="/images/{{image5}}.jpg" alt="" />
+            <div class="card__label">
+              <div class="card__text">{{name5}}</div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="glide__slide">
+        <div class="glide__image">
+          <div class="card">
+            <img class="card__image" src="/images/{{image6}}.jpg" alt="" />
+            <div class="card__label">
+              <div class="card__text">{{name6}}</div>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="glide__arrows" data-glide-el="controls">
+    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+      ←
+    </button>
+    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+      →
+    </button>
+  </div>
+
+  <div class="glide__bullets" data-glide-el="controls[nav]">
+    <button class="glide__bullet" data-glide-dir="=0"></button>
+    <button class="glide__bullet" data-glide-dir="=1"></button>
+    <button class="glide__bullet" data-glide-dir="=2"></button>
+    <button class="glide__bullet" data-glide-dir="=3"></button>
+    <button class="glide__bullet" data-glide-dir="=4"></button>
+    <button class="glide__bullet" data-glide-dir="=5"></button>
+  </div>
+</div>
+
+<script src="js/glide.min.js"></script>
+
+<script>
+  var w = window.innerWidth;
+  var perview_value = 3;
+
+if (w <= 500) {
+    perview_value = 1;
+} 
+
+  new Glide(".glide", {
+    autoplay: 3000,
+    perView: perview_value,
+    gap: 10,
+    type: "carousel",
+  }).mount();
+</script>
