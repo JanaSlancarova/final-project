@@ -1,6 +1,6 @@
 
 <!-- Trigger/Open The Modal -->
-<div id="myBtn" class="button-buy">KOUPIT</div>
+<div id="{{product.data.name}}" class="button-buy">KOUPIT</div>
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
@@ -28,7 +28,7 @@
 var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+var btn = document.getElementById("{{product.data.name}}");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
