@@ -31,11 +31,78 @@ body{
 }
 
 
+.glide{
+    max-width: 800px;
+    margin: 0 auto ;
+ }
 
- 
+
+.menu-categories{
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid colors.$background-banner;
+
+    @media screen and (min-width: 500px) {
+        padding-top: 0.5em;
+        padding-bottom: 1em;  
+        display: flex;
+        gap: 2em;
+        align-items: center;
+    }
 
 
+    /*&__title{
+        margin: 0;
+        margin-bottom: 0.5em;
+        font-size: fonts.$font-size-title-mobile;
 
+        @media screen and (min-width: 333px) {
+            font-size: fonts.$font-size-title-desktop;
+            
+        }
+
+         @media screen and (min-width: 500px) {
+            margin-bottom: 0;
+            
+        }*/
+
+    
+
+    &__list{
+        display: flex;
+        padding: 0;
+        margin: 0;
+        gap: 1em;
+        
+
+         @media screen and (min-width: 500px) {
+            display: flex;
+        }
+    }
+
+    &__item{
+        list-style: none;
+         :hover{
+            color: black;
+            font-weight: 600;
+        }
+
+        
+    }
+
+    &__link{
+        text-decoration: none;
+        padding: 0.5em;
+        padding-left: 0;
+        font-size: fonts.$font-size-mobile;
+        color: colors.$text-color;
+
+       
+
+        @media screen and (min-width: 500px) {
+        font-size: fonts.$font-size-desktop;
+        }
+    }
+}
 
 
 

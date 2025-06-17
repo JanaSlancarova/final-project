@@ -3,27 +3,10 @@ layout: layouts/template-main.njk
 ---
 
 <div class="box">
-  <h3>Kategorie:</h3>
-  <nav class="menu-categories">
-    <ul>
-      <li class="menu-categories__item">
-        <a class="menu-categories__link" href="/eshop/hrnky/">Hrnky</a>
-      </li>
-      <li class="menu-categories__item">
-        <a class="menu-categories__link" href="/eshop/kalisky/">Kalíšky</a>
-      </li>
-      <li class="menu-categories__item">
-        <a class="menu-categories__link" href="/eshop/misky/">Misky</a>
-      </li>
-      <li class="menu-categories__item">
-        <a class="menu-categories__link" href="/eshop/talire/">Talíře</a>
-      </li>
-    </ul>
-  </nav>
-
-  <h2 class="product__name--visible">Kategorie</h2>
+  {% include 'partials/menu-categories.njk' %}
+  
 </div>
-
+ 
 <div class="products-list">
   <div class="card">
     <a class="card__link" href="/eshop/hrnky/">

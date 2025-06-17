@@ -2,9 +2,13 @@
 layout: layouts/template-main.njk
 ---
 <div class="box">
+
+{% include 'partials/menu-categories.njk' %}
+
 <h2 class="product__name--visible">{{title}}</h2>
 
 <p class="product__desc">{{text}}</p>
 </div>
+
 {{ content | safe }}
 

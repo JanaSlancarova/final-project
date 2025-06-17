@@ -17,19 +17,11 @@ title: Janka Pottery
 
 <h2 class="news">Novinky</h2>
 
-
-
-
-
-
-<div class="card">
-  <img class="card__image" src="/images/hrnek.jpg" alt="" />
-  <div class="card__label">
-    <div class="card__text">Hrnek 250 ml</div>
-    <div class="card__price">490,-</div>
-    <div class="card__button"><a class="button-buy" href="#">KOUPIT</a></div>
-  </div>
-</div>
+{% for product in collections.hrnky | reverse %} 
+{% if loop.index0 < 1 %}
+{% include 'partials/card.njk'%} 
+{% endif%} 
+{% endfor %}
 
 <div class="glide">
   <div class="glide__track" data-glide-el="track">
