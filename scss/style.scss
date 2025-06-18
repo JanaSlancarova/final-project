@@ -5,6 +5,7 @@
 @use "card";
 @use "product";
 @use "modal";
+@use "spacings";
 @use "footer";
 
 
@@ -26,6 +27,10 @@ body{
 
 .main{
     padding-bottom: 100px;
+    //max-width: 800px;
+    margin: 0 auto;
+
+    
 }
 
 .news{
@@ -119,5 +124,12 @@ body{
     }
 }
 
+.button-back{
+    width: fit-content;
 
-
+    &:hover{
+        color: black;
+        font-weight: 600;
+    }
+    
+}

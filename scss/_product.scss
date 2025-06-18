@@ -6,9 +6,12 @@
 
 .product{
 
-    padding: 2em;
+    //padding: 2em;
+    padding-top: 1em;
+    padding-bottom: 2em;
     max-width: 800px;
     margin: 0 auto;
+    font-size: fonts.$font-size-mobile;
 
     @media screen and (min-width: 333px) {
         font-size: fonts.$font-size-title-desktop;
@@ -17,6 +20,7 @@
 
     &__image{
         width: 100%;
+        //height: fit-content;;
         max-height: 500px;
         overflow: hidden;  
     }
@@ -24,7 +28,7 @@
     &__img{
         width: 100%;
         object-fit: cover;
-        object-position: 25% 25%;             
+        //object-position: 25% 25%;             
     }
 
     &__name{
@@ -66,7 +70,7 @@
        display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 3em;
-        margin: 2em auto;
+        //margin: 2em auto;
     
         
         &__image{
@@ -109,7 +113,7 @@
 
 
 .other-products{
-    padding: 2em;
+    //padding: 2em;
     max-width: 800px;
     margin: 0 auto;
 
@@ -123,7 +127,7 @@
 }
 
 .secondary-title{
-    margin-top: 0;
+    margin-top: 1em;
     font-size: fonts.$font-size-title-mobile;
     color: colors.$text-color;
 
@@ -140,43 +144,43 @@
     max-height: 300px;
     position: relative;
 
-    &__link{
-        display: block;
-        height: 30vw;
-        max-height: 300px;
-        overflow: hidden;
-    }
+&__link{
+    display: block;
+    height: 30vw;
+    max-height: 300px;
+    overflow: hidden;
+}
 
-    &__image{
-        width: 100%;
-        object-fit: cover;
-        
-    }
+&__image{
+    width: 100%;
+    object-fit: cover;
+    
+}
 
-    &__text{
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-       // z-index: -1  ;
-        text-align: center;
-        display: block;
-        font-size: fonts.$font-size-mobile;
-        color: colors.$link-hover-font;
+&__text{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    // z-index: -1  ;
+    text-align: center;
+    display: block;
+    font-size: fonts.$font-size-mobile;
+    color: colors.$link-hover-font;
 
-        @media screen and (min-width: 500px) {
-        font-size: fonts.$font-size-title-desktop;
-        }
-        
+    @media screen and (min-width: 500px) {
+    font-size: fonts.$font-size-title-desktop;
     }
-   
-     &__link:hover{
-        .card-small__image{
-            opacity: 0.5;
-        }
-      
+    
+}
 
+    &__link:hover{
+    .card-small__image{
+        opacity: 0.5;
     }
+    
+
+}
 }
 
     

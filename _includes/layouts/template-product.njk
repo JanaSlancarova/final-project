@@ -2,7 +2,14 @@
 layout: layouts/template-main.njk
 ---
 
+
+<div class="box">
+  <div class="button-back">
+<a class="menu-categories__link" href="/eshop/{{type}}/"> ← zpět na {{type | upper}}</a>
+</div>
+
 <div class="product">
+
   <h2 class="product__name">{{ name }}</h2>
 
   <div class="product__image">
@@ -27,22 +34,25 @@ layout: layouts/template-main.njk
   </div>
 </div>
 
-<div class="other-products">
-  <h2 class="secondary-title">Mohlo by vás zajímat</h2>
+ <div class="other-products">
+  <hr>
+<h2 class="secondary-title">Mohlo by vás zajímat</h2>
 
-  <div class="other-products__list">
-    {% for product in collections.eshop | randomLimit(3, page.url) %} 
-    <div class="card-small">
-      <a class="card-small__link" href="{{ product.url }}">
-        
-        <img
-          class="card-small__image"
-          src="/images/{{ product.data.image }}.jpg"
-          alt="{{ product.data.alt }}"
-        />
-        <div class="card-small__text">{{ product.data.name }}</div>
-      </a>
-    </div>
-    {% endfor%}
+<div class="other-products__list">
+  {% for product in collections.eshop | randomLimit(3, page.url) %} 
+  <div class="card-small">
+    <a class="card-small__link" href="{{ product.url }}">
+      
+      <img
+        class="card-small__image"
+        src="/images/{{ product.data.image }}.jpg"
+        alt="{{ product.data.alt }}"
+      />
+      <div class="card-small__text">{{ product.data.name }}</div>
+    </a>
+  </div>
+  {% endfor%}
+</div> 
+</div>
   </div>
 </div>

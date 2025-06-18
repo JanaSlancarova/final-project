@@ -38,7 +38,7 @@
 }
 @media screen and (min-width: 666px) {
   .logo {
-    width: 200px;
+    width: 150px;
   }
 }
 @media screen and (max-height: 500px) {
@@ -345,9 +345,11 @@
 }
 
 .product {
-  padding: 2em;
+  padding-top: 1em;
+  padding-bottom: 2em;
   max-width: 800px;
   margin: 0 auto;
+  font-size: 3.8vw;
 }
 @media screen and (min-width: 333px) {
   .product {
@@ -362,7 +364,6 @@
 .product__img {
   width: 100%;
   object-fit: cover;
-  object-position: 25% 25%;
 }
 .product__name {
   margin-top: 0;
@@ -396,7 +397,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 3em;
-    margin: 2em auto;
   }
   .product__image {
     grid-column: 1/2;
@@ -427,7 +427,6 @@
 }
 
 .other-products {
-  padding: 2em;
   max-width: 800px;
   margin: 0 auto;
 }
@@ -439,7 +438,7 @@
 }
 
 .secondary-title {
-  margin-top: 0;
+  margin-top: 1em;
   font-size: 6vw;
   color: #34333b;
 }
@@ -610,6 +609,7 @@ body {
 
 .main {
   padding-bottom: 100px;
+  margin: 0 auto;
 }
 
 .news {
@@ -687,4 +687,12 @@ body {
   .menu-categories__link {
     font-size: 16px;
   }
+}
+
+.button-back {
+  width: fit-content;
+}
+.button-back:hover {
+  color: black;
+  font-weight: 600;
 }/*# sourceMappingURL=style.css.map */
