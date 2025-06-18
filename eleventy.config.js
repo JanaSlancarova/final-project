@@ -5,7 +5,24 @@ export default async function(eleventyConfig) {
   // Zkopírovat složku css/ to _site/css/
   eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy("js");
+  eleventyConfig.addFilter("randomLimit", (arr, limit, currPage) => {
+  // Filters out current page
+  const pageArr = arr.filter((page) => page.url !== currPage);
+
+  // Randomizes remaining items
+  pageArr.sort(() => {
+    return 0.5 - Math.random();
+  });
+
+  // Returns array items up to limit
+  return pageArr.slice(0, limit);
+});
 }
+
+
+
+
+
 
 export const config = {
   // jako šablonu nebo soubor s obsahem
