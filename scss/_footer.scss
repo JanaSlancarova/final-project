@@ -6,4 +6,8 @@
     padding: 1em;
     text-align: center;
     color: colors.$banner-text-color;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }

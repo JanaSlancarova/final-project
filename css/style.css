@@ -585,6 +585,10 @@
   padding: 1em;
   text-align: center;
   color: rgba(255, 255, 255, 0.836);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 html {
@@ -612,6 +616,11 @@ body {
 .glide {
   max-width: 800px;
   margin: 0 auto;
+}
+.glide__box {
+  background-color: rgba(142, 148, 137, 0.2509803922);
+  padding-top: 1em;
+  padding-bottom: 2em;
 }
 
 .menu-categories {

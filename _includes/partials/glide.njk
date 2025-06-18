@@ -1,3 +1,4 @@
+<div class="glide__box">
 <div class="glide">
   <div class="glide__track" data-glide-el="track">
     <ul class="glide__slides">
@@ -82,21 +83,28 @@
     <button class="glide__bullet" data-glide-dir="=5"></button>
   </div>
 </div>
+</div>
 
 <script src="js/glide.min.js"></script>
 
 <script>
-  var w = window.innerWidth;
-  var perview_value = 3;
 
-if (w <= 500) {
-    perview_value = 1;
-} 
 
   new Glide(".glide", {
     autoplay: 3000,
-    perView: perview_value,
-    gap: 10,
+    animationDuration: 1000,
+    animationTimingFunc: "ease",
+    perView: 3,
+    gap: 3,
     type: "carousel",
+    breakpoints: {
+       930: {
+      perView: 2
+    },
+      400: {
+      perView: 1
+    }
+  }
+    
   }).mount();
 </script>

@@ -35,7 +35,14 @@ body{
 .glide{
     max-width: 800px;
     margin: 0 auto ;
+
+    &__box{
+        background-color: colors.$background-glide;
+        padding-top: 1em;
+        padding-bottom: 2em;
+    }
  }
+
 
 
 .menu-categories{
