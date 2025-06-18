@@ -13,23 +13,17 @@
     />
     <link rel="stylesheet" href="css/glide.core.min.css" />
     <link rel="stylesheet" href="css/glide.theme.min.css" />
-
-
   </head>
 
   <body>
-
     {% include 'partials/header.njk' %}
-   
 
-    {{ content | safe }}
-
+    <div class="main">
+      {{ content | safe }}
+    </div>
 
     {% include 'partials/footer.njk' %}
-    
 
     <script src="/js/app.js"></script>
-
-    
   </body>
 </html>

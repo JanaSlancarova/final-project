@@ -3,10 +3,12 @@
 @use "spacings";
 
 
+
 .box{
     max-width: 800px;
     margin: 0 auto;
     padding: spacings.$spacing-mobile;
+    
     
     //font-size: fonts.$font-size-mobile;
 
