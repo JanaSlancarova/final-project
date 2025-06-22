@@ -237,8 +237,8 @@
 @media screen and (min-width: 900px) {
   .banner {
     padding: 1.5em 3em;
-    padding-top: 3em;
-    padding-bottom: 3em;
+    padding-top: 2em;
+    padding-bottom: 2em;
   }
 }
 .box {
@@ -364,6 +364,7 @@
 .product__img {
   width: 100%;
   object-fit: cover;
+  object-position: 25% 25%;
 }
 .product__name {
   margin-top: 0;
@@ -695,4 +696,50 @@ body {
 .button-back:hover {
   color: black;
   font-weight: 600;
+}
+
+.making-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  overflow: hidden;
+}
+.making-grid__item {
+  width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+.omne {
+  display: grid;
+  margin-top: 1em;
+}
+@media screen and (min-width: 500px) {
+  .omne {
+    grid-template-columns: 2fr 2fr;
+  }
+}
+@media screen and (min-width: 650px) {
+  .omne {
+    grid-template-columns: 1.5fr 2fr;
+  }
+}
+.omne__image {
+  width: 100%;
+}
+@media screen and (min-width: 500px) {
+  .omne__image {
+    grid-column: 1/2;
+    grid-row: 1/4;
+  }
+}
+.omne__text {
+  margin-top: 0;
+  font-size: 3.8vw;
+}
+@media screen and (min-width: 500px) {
+  .omne__text {
+    font-size: 16px;
+    padding-left: 1em;
+  }
 }/*# sourceMappingURL=style.css.map */

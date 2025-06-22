@@ -1,0 +1,14 @@
+---
+layout: layouts/template-type.njk
+title: Ostatní
+type: ostatni
+text: Výrobky, které jsou unikátní a nezapadají do běžné kategorie.
+---
+
+<div class="products-list">
+{% for product in collections.ostatni | reverse %}
+
+{% include 'partials/card.njk' %}
+
+{% endfor %}
+</div>
