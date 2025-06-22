@@ -9,7 +9,7 @@
   position: sticky;
   top: 0;
   border-bottom: 1px solid #8E9489;
-  z-index: 2;
+  z-index: 5;
 }
 @media screen and (max-height: 500px) {
   .header {

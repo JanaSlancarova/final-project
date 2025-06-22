@@ -16,7 +16,7 @@ $ham-menu-width: 250px;
     position: sticky;
     top: 0;
     border-bottom: 1px solid colors.$background-banner;
-    z-index: 2;
+    z-index: 5;
 
     @media screen and (max-height:500px) {
         padding: spacings.$spacing-mobile;
