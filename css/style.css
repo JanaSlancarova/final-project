@@ -616,6 +616,7 @@ body {
 .news {
   text-align: center;
   color: #34333b;
+  margin-top: 0;
 }
 
 .glide {
@@ -742,4 +743,46 @@ body {
     font-size: 16px;
     padding-left: 1em;
   }
+}
+
+.vyroba,
+.konfigurator,
+.form {
+  font-size: 3.8vw;
+}
+@media screen and (min-width: 500px) {
+  .vyroba,
+  .konfigurator,
+  .form {
+    font-size: 16px;
+  }
+}
+
+.form {
+  width: 80vw;
+  max-width: 800px;
+}
+.form__item {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+.form__title {
+  display: block;
+  margin-bottom: 0.5em;
+}
+.form__text {
+  width: 60%;
+  padding: 0.5em;
+  border-radius: 10px;
+  border: 1px solid #34333b;
+}
+.form__textarea {
+  width: 100%;
+  padding: 0.5em;
+  border-radius: 10px;
+  border: 1px solid #34333b;
+}
+
+.button-buy--submit {
+  outline: 0;
 }/*# sourceMappingURL=style.css.map */
