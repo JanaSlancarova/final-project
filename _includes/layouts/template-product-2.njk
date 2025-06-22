@@ -2,7 +2,6 @@
 layout: layouts/template-main.njk
 ---
 
-
 <div class="box">
   <div class="button-back">
 <a class="menu-categories__link" href="/eshop/{{type}}/"> ← zpět na {{title | upper}}</a>
@@ -15,6 +14,11 @@ layout: layouts/template-main.njk
   <div class="product__image">
     <img class="product__img" src="/images/{{ image }}.jpg" id="imageBox" alt="{{ name }}" />
   </div>
+
+  <div class="galerie">
+  <img class="galerie__small" src="/images/{{image}}.jpg" alt="{{name}}" onclick="myFunction(this)">
+  <img class="galerie__small" src="/images/{{image2}}.jpg" alt="{{name}}" onclick="myFunction(this)">
+</div>
 
   <div class="product__info">
     <h2 class="product__name--desktop">{{ name }}</h2>
@@ -34,10 +38,9 @@ layout: layouts/template-main.njk
   </div>
 </div>
 
-<div class="galerie">
+<div class="galerie--desktop">
   <img class="galerie__small" src="/images/{{image}}.jpg" alt="{{name}}" onclick="myFunction(this)">
   <img class="galerie__small" src="/images/{{image2}}.jpg" alt="{{name}}" onclick="myFunction(this)">
-  <img class="galerie__small" src="/images/{{image3}}.jpg" alt="{{name}}" onclick="myFunction(this)">
 </div>
 
 
