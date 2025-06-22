@@ -54,3 +54,26 @@ url6: /eshop/talire/talir-no-2
   </p>
   <p>Děkujeme, že podporujete poctivou ruční výrobu.</p>
 </div>
+
+<div class="box">
+  <div class="galerie">
+    <div class="galerie__images">
+      <img class="galerie__big" id="imageBox" src="/images/hrnek no. 1.jpg" alt="">
+      <div class="galerie__images-small">
+        <img class="galerie__small" src="/images/hrnek no. 1.jpg" alt="" onclick="myFunction(this)">
+        <img class="galerie__small" src="/images/hrnek no. 2.jpg" alt="" onclick="myFunction(this)">
+        <img class="galerie__small" src="/images/hrnek no. 3.jpg" alt="" onclick="myFunction(this)">
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    function myFunction(smallImg)
+    {
+      var fullImg = document.getElementById("imageBox");
+      fullImg.src = smallImg.src;
+    }
+
+  </script>
+</div>

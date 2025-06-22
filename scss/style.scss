@@ -20,7 +20,7 @@ body{
     font-family: fonts.$font-main;
     font-weight: 400;
     font-style: normal;
-    min-height: 100vh;
+    //min-height: 100vh;
     position: relative;
     
 }
@@ -232,4 +232,15 @@ body{
 
 .button-buy--submit{
     outline: 0  ;
+}
+
+
+
+.galerie__small{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    overflow: hidden;
+    display: inline-block;
+    cursor: pointer;
 }

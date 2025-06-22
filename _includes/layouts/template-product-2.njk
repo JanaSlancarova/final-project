@@ -1,0 +1,73 @@
+---
+layout: layouts/template-main.njk
+---
+
+
+<div class="box">
+  <div class="button-back">
+<a class="menu-categories__link" href="/eshop/{{type}}/"> ← zpět na {{title | upper}}</a>
+</div>
+
+<div class="product">
+
+  <h2 class="product__name">{{ name }}</h2>
+
+  <div class="product__image">
+    <img class="product__img" src="/images/{{ image }}.jpg" id="imageBox" alt="{{ name }}" />
+  </div>
+
+  <div class="product__info">
+    <h2 class="product__name--desktop">{{ name }}</h2>
+    <div class="product__desc">
+      <p>{{ desc }}</p>
+      <p>{{ desc2 }}</p>
+      <p>{{ desc3 }}</p>
+      <p>{{ desc4 }}</p>
+    </div>
+
+    <!-- <div class="product__button"><a class="button-buy--big" href="#">KOUPIT</a></div> -->
+  </div>
+  <div class="product__buy">
+    <p class="product__price">{{ price }}</p>
+    <p class="product__state">{{ state }}</p>
+    {% include 'partials/window.njk' %}
+  </div>
+</div>
+
+<div class="galerie">
+  <img class="galerie__small" src="/images/{{image}}.jpg" alt="{{name}}" onclick="myFunction(this)">
+  <img class="galerie__small" src="/images/{{image2}}.jpg" alt="{{name}}" onclick="myFunction(this)">
+  <img class="galerie__small" src="/images/{{image3}}.jpg" alt="{{name}}" onclick="myFunction(this)">
+</div>
+
+
+ <div class="other-products">
+  <hr>
+<h2 class="secondary-title">Mohlo by vás zajímat</h2>
+
+<div class="other-products__list">
+  {% for product in collections.eshop | randomLimit(3, page.url) %} 
+  <div class="card-small">
+    <a class="card-small__link" href="{{ product.url }}">
+      
+      <img
+        class="card-small__image"
+        src="/images/{{ product.data.image }}.jpg"
+        alt="{{ product.data.alt }}"
+      />
+      <div class="card-small__text">{{ product.data.name }}</div>
+    </a>
+  </div>
+  {% endfor%}
+</div> 
+</div>
+
+ <script>
+    function myFunction(smallImg)
+    {
+      var fullImg = document.getElementById("imageBox");
+      fullImg.src = smallImg.src;
+    }
+
+  </script>
+  </div>

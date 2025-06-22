@@ -346,7 +346,7 @@
 
 .product {
   padding-top: 1em;
-  padding-bottom: 2em;
+  padding-bottom: 0.5em;
   max-width: 800px;
   margin: 0 auto;
   font-size: 3.8vw;
@@ -604,7 +604,6 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-style: normal;
-  min-height: 100vh;
   position: relative;
 }
 
@@ -785,4 +784,13 @@ body {
 
 .button-buy--submit {
   outline: 0;
+}
+
+.galerie__small {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  overflow: hidden;
+  display: inline-block;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
